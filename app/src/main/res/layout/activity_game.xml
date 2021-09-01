@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rrightorwrong2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/var1"
+        android:layout_width="185dp"
+        android:layout_height="83dp"
+        android:background="#E0F7FA"
+        android:textAllCaps="true"
+        android:textColor="#0000E1"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/word_for_guessing"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/word_for_guessing"
+        android:layout_width="257dp"
+        android:layout_height="95dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAllCaps="true"
+        android:textColor="#A600FF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <Button
+        android:id="@+id/var2"
+        android:layout_width="185dp"
+        android:layout_height="83dp"
+        android:background="#E0F7FA"
+        android:textColor="#0000FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/var1"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/var3"
+        android:layout_width="185dp"
+        android:layout_height="83dp"
+        android:background="#E0F7FA"
+        android:textColor="#0000FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/var2"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <Button
+        android:id="@+id/var4"
+        android:layout_width="185dp"
+        android:layout_height="83dp"
+        android:background="#E0F7FA"
+        android:textColor="#0000FF"
+        app:layout_constraintBottom_toTopOf="@+id/next_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/var3"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <Button
+        android:id="@+id/finish_game"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E0F7FA"
+        android:text="Вернуться к переводчику"
+        android:textColor="#0000FF"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#A600FF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/next_word"
+        android:layout_width="138dp"
+        android:layout_height="59dp"
+        android:background="#E0F7FA"
+        android:text="Следующее слово"
+        android:textColor="#0000FF"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/rightorwrong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#A600FF"
+        app:layout_constraintBottom_toTopOf="@+id/next_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/var1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TextView
+        android:id="@+id/rightorwrong2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#A600FF"
+        app:layout_constraintBottom_toTopOf="@+id/rightorwrong3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/var2"
+        app:layout_constraintTop_toBottomOf="@+id/rightorwrong1" />
+
+    <TextView
+        android:id="@+id/rightorwrong3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#A600FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/var3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <TextView
+        android:id="@+id/rightorwrong4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#A600FF"
+        app:layout_constraintBottom_toTopOf="@+id/next_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/var4"
+        app:layout_constraintTop_toBottomOf="@+id/rightorwrong3"
+        app:layout_constraintVertical_bias="0.517" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
